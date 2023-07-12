@@ -9,7 +9,7 @@ class Restaurant:
             raise Exception
 
         but this would just make all of my other unit tests raise an exception.
-        I was able to pass all of the other tests however.
+        I was able to pass all of the other tests however. 
     '''
 
     def __init__(self, name):
