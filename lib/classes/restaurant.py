@@ -19,8 +19,10 @@ class Restaurant:
         return self._name
 
     def set_name(self, name):
-        if len(name) >= 1:
+        if isinstance(name, str) and len(name) >= 1 and not hasattr(self, 'name'):
             self._name = name
+        else:
+            raise Exception
 
     name = property(get_name, set_name)
 
